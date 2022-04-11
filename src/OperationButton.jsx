@@ -3,6 +3,7 @@ import { ACTIONS } from "./App"
 export default function OperationButton({ dispatch, operation }) {
   return (
     <button
+    className="operation-button"
       onClick={() =>
         dispatch({ type: ACTIONS.CHOOSE_OPERATION, payload: { operation } })
       }
