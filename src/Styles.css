@@ -12,19 +12,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.calculator-grid {
-  display: grid;
-  margin-top: 2rem;
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  grid-template-columns: repeat(4, 6rem);
-  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculator-grid {
+  width: 350px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
 }
 
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
   border: 1px solid white;
-  margin: 0.25rem;
+  /* margin: 0.15rem; */
   outline: none;
   border-radius: 3rem;
   transition: all ease 150ms;
@@ -97,4 +106,13 @@ body {
 .output .current-operand {
   color: white;
   font-size: 2.5rem;
+}
+
+footer{
+  padding-top: 1rem;
+  color: #1c4c96;
+}
+
+a{
+  color: #1c4c96;
 }
